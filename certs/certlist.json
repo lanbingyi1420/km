@@ -1,0 +1,40 @@
+{
+	"root_cert":[
+	{
+      "profile_id": 1,
+      "cert": "/opt/config/certs/gov-ca-root.pem",
+    },
+    {
+		"profile_id": 2,
+		"cert": "/opt/config/certs/enterprise-ca-root.pem",
+    }
+	],
+	"dev_cert":[
+	{
+	  "profile_id": 1,
+      "sni": ["mngdev.localhost"],
+      "sign_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/server_sign_1.crt",
+      "enc_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/server_enc_1.crt",
+      "key_index": 1
+	},
+	{
+	  "profile_id": 2,
+      "sni": ["CAdev.localhost"],
+      "sign_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/server_sign_2.crt",
+      "enc_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/server_enc_2.crt",
+      "key_index": 3
+	}],
+	"client_cert":[
+	{
+		"profile_id": 1,
+		"sni": ["bizdev.localhost"],
+		"sign_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/client_sign_1.crt",
+		"enc_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/client_enc_1.crt",
+	},
+	{
+		"profile_id": 2,
+		"sni": ["biz2dev.localhost"],
+		"sign_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/client_sign_2.crt",
+		"enc_cert": "../../02_ref_code/Tongsuo/test/certs/sm2/client_enc_2.crt",
+	}]
+}

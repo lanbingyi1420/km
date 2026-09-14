@@ -1,0 +1,55 @@
+# ---------- 构建目录 ----------
+build/
+out/
+dist/
+
+# ---------- CMake / Ninja / Make 生成物 ----------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+.ninja_deps
+.ninja_log
+build.ninja
+rules.ninja
+Makefile
+
+# ---------- 编译中间件与库产物 ----------
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.dll.a
+*.exp
+*.pdb
+*.ilk
+*.exe
+*.elf
+*.bin
+
+# ---------- MSVC / Visual Studio ----------
+.vs/
+Debug/
+Release/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.tlog
+
+# ---------- 日志（logs/ 目录与 *.log 文件均忽略，重复包含保留） ----------
+logs/
+*.log
+
+# ---------- 编辑器 / 操作系统 ----------
+.vscode/
+.idea/
+.codebuddy/
+*.swp
+.DS_Store
+Thumbs.db
